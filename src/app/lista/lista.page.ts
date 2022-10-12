@@ -8,7 +8,8 @@ import { NavController } from '@ionic/angular';
 })
 export class ListaPage implements OnInit {
 
-  public var = ['Amsterdam',
+  public var = [
+                 'Amsterdam',
                  'Buenos Aires', 
                  'Cairo', 
                  'Geneva', 

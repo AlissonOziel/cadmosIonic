@@ -1,0 +1,682 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <!--Header-->
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+
+        <ion-slides pager="true">
+
+          <!--Desenvolvimento-->
+          <ion-slide>
+
+            <ion-card>
+              
+              <ion-content>
+                
+                <ion-row>
+
+                  <ion-col size="12" size-sm>
+                    <ion-img src="../assets/jobs/devs.jpg" alt="" class="imgHeader"></ion-img>
+                  </ion-col>
+
+                  <ion-col size="12" size-sm>
+                    <ion-card>
+
+                      <ion-card-header>
+                        <ion-title>
+                          Desenvolvimento
+                        </ion-title>
+                      </ion-card-header>
+                      
+                      <ion-card-content>
+                        
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Sites
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item >
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Sistemas
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Aplicativos
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Jogos 2D
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-label>
+                            <ion-button color="primary" (click)="abrirDevs()">
+                              Saiba Mais
+                            </ion-button>
+                          </ion-label>
+                        </ion-item>
+
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  
+                </ion-row>
+              </ion-content>
+              
+            </ion-card>
+
+          </ion-slide>
+
+          <!--Manuenção-->
+          <ion-slide>
+
+            <ion-card>   
+              
+              <ion-content>
+
+                <ion-row>
+
+                  <ion-col size="12" size-sm>
+                    <img src="../assets/jobs/manutencao.jpg" alt="" class="imgHeader">
+                  </ion-col>
+
+                  <ion-col size="12" size-sm>
+                    <ion-card>
+
+                      <ion-card-header>
+                        <ion-title>
+                          Manutenção
+                        </ion-title>
+                      </ion-card-header>
+
+                      <ion-card-content>
+                            
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;" >
+                            <ion-label>
+                              Reparação
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item >
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Preventivas
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Upgrades
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Intalação de Programas
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-label>
+                            <ion-button color="primary" (click)="abrirManutencao()">
+                              Saiba Mais
+                            </ion-button>
+                          </ion-label>
+                        </ion-item>
+
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  
+                </ion-row>
+              </ion-content>
+              
+            </ion-card>
+
+          </ion-slide>
+
+          <!--Desinger-->
+          <ion-slide>
+
+            <ion-card>
+
+              <ion-content>
+                
+                <ion-row>
+
+                  <ion-col size="12" size-sm>
+                    <img src="../assets/equipe/taturana.jpeg" style="border-radius: 140px;" alt="">
+                  </ion-col>
+
+                  <ion-col size="12" size-sm>
+                    <ion-card>
+
+                      <ion-card-header>
+                        <ion-title>
+                          Criação
+                        </ion-title>
+                      </ion-card-header>
+              
+                      <ion-card-content>
+                        
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Logos
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item >
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Banners
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-chip color="primary" style="font-size: 30px;">
+                            <ion-label>
+                              Artes no Geral
+                            </ion-label>
+                          </ion-chip>
+                        </ion-item>
+
+                        <ion-item>
+                          <ion-label>
+                            <ion-button color="primary" (click)="abrirDesing()">
+                              Saiba Mais
+                            </ion-button>
+                          </ion-label>
+                        </ion-item>
+    
+                      </ion-card-content>
+                    </ion-card>
+                  </ion-col>
+                  
+                </ion-row>
+              </ion-content>
+              
+            </ion-card>
+
+          </ion-slide>
+        </ion-slides>
+      
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--Menu-->
+  <ion-grid>
+
+    <ion-row>
+
+      <ion-col size="12" size-xl>
+        <div>
+          <ion-card>
+            <ion-card-content>
+
+              <ion-slides>
+                
+                <!--Slide 1-->
+                <ion-slide>
+
+                  <ion-row>
+
+                    <ion-col size="12" size-sm>
+
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-subtitle>Portifolio</ion-card-subtitle>
+                          <ion-card-title>Projetos</ion-card-title>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Os projetos desenvolvido pelo grupo Cadmos tem como objetivo de
+                          colaborar com o dia-a-dia dos usuarios oferendo praticidade.
+                        </ion-card-content>
+                      </ion-card>
+
+                    </ion-col>
+
+                    <ion-col size="12" size-sm>
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-subtitle>Serviços</ion-card-subtitle>
+                          <ion-card-title>T.I</ion-card-title>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          <!-- Oferecendo soluções em diversas áreas de T.I desde de Desenvolvimento 
+                          como Manutenção em Hardware e Criação de artes. -->
+                        </ion-card-content>
+                      </ion-card>
+                    
+                    </ion-col>
+
+                    <ion-col size="12" size-sm>
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-subtitle>Sobre</ion-card-subtitle>
+                          <ion-card-title>Empresa</ion-card-title>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Um empresa que tem como objetivo de ofercer as melhores soluções para seus
+                          clientes. Com Atitudes que fazem a diferença.
+                        </ion-card-content>
+                      </ion-card>
+                    
+                    </ion-col>
+
+                  </ion-row>
+          
+                </ion-slide>
+
+                <!--Slide 2 Saiba Mais-->
+                <ion-slide>
+
+                  <ion-row>
+
+                    <ion-col size="12" size-sm>
+
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-subtitle>Networking</ion-card-subtitle>
+                          <ion-card-title>Pacerias</ion-card-title>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Keep close to Nature's heart... and break clear away, once in awhile,
+                          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                        </ion-card-content>
+                      </ion-card>
+
+                    </ion-col>
+
+                    <ion-col size="12" size-sm>
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-subtitle>Responsabilidade</ion-card-subtitle>
+                          <ion-card-title>Projetos Sociais</ion-card-title>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Keep close to Nature's heart... and break clear away, once in awhile,
+                          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                          
+                        </ion-card-content>
+                        
+                      </ion-card>
+                    
+                    </ion-col>
+
+                    <ion-col size="12" size-sm>
+                      <ion-card>
+                        <ion-card-header>
+                          <ion-card-subtitle>Tecnologia</ion-card-subtitle>
+                          <ion-card-title>Inovação</ion-card-title>
+                        </ion-card-header>
+                      
+                        <ion-card-content>
+                          Keep close to Nature's heart... and break clear away, once in awhile,
+                          and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                        </ion-card-content>
+                      </ion-card>
+                    
+                    </ion-col>
+
+                  </ion-row>
+          
+                </ion-slide>
+              
+              </ion-slides>
+
+            </ion-card-content>
+          </ion-card>
+          
+        </div>
+      </ion-col>
+
+    </ion-row>
+
+  </ion-grid>
+
+  <!--Equipe-->
+  <ion-card>
+    <ion-card-header>
+      <ion-title>
+        Equipe
+      </ion-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+
+      <!--Alisson-->
+      <ion-col size="12" size-sm>
+        
+        <ion-card>
+          
+          <ion-item>
+            
+            <ion-label text-align="center">
+              Alisson Oziel
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-card-content>
+            <img src="../assets/equipe/taturana.jpeg" style="border-radius: 140px;" alt="">
+          </ion-card-content>
+
+          <ion-card>
+            <ion-chip expand="full" color="secondary" outline (click)="abrirSheetAlisson()" >
+              Ver +
+            </ion-chip>
+          </ion-card>
+
+        </ion-card>
+
+      </ion-col>
+
+      <!--Douglas-->
+      <ion-col size="12" size-sm>
+
+        <ion-card>
+          <ion-item>
+            
+            <ion-label text-align="center">
+              Douglas Modesto
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-card-content>
+            <img src="../assets/equipe/dodo.jpg" style="border-radius: 140px;" alt="">
+          </ion-card-content>
+
+          <ion-card >
+            <ion-chip color="secondary" outline (click)="abrirSheetDouglas()" >
+              Ver +
+            </ion-chip>
+          </ion-card>
+
+        </ion-card>
+
+      </ion-col>
+
+      <!--João-->
+      <ion-col size="12" size-sm>
+
+        <ion-card>
+          <ion-item>
+            
+            <ion-label text-align="center">
+              João Pedro
+            </ion-label>
+            
+          </ion-item>
+
+          <ion-card-content>
+            <img src="../assets/equipe/kaiser.jpg" style="border-radius: 140px;" alt="">
+          </ion-card-content>
+
+          <ion-card >
+            <ion-chip color="secondary" outline (click)="abrirSheetJoao()" >
+              Ver +
+            </ion-chip>
+          </ion-card>
+        </ion-card>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <!--Projetos Sociais-->
+  <ion-card>
+    <ion-card-header>
+      <ion-title>
+        Projetos Sociais
+      </ion-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-subtitle>Texto</ion-card-subtitle>
+            <ion-card-title>Card Title</ion-card-title>
+          </ion-card-header>
+        
+          <ion-card-content>
+            Keep close to Nature's heart... and break clear away, once in awhile,
+            and climb a mountain or spend a week in the woods. Wash your spirit clean.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+      <ion-col size="12" size-sm>
+        <ion-card>
+          <ion-card-content>
+            
+            <ion-card-header>
+              <ion-card-title>Projetos Social</ion-card-title>
+            </ion-card-header>
+
+            <!--Porjeto 1-->
+            <ion-row>
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Projeto Hope
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Leyse
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+            </ion-row>
+
+            <!--Projeto 2-->
+            <ion-row>
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Keep close to Nature's heart... and break clear away, once in awhile,
+                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Keep close to Nature's heart... and break clear away, once in awhile,
+                    and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+            </ion-row>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+  <!--Ferramentas-->
+  <ion-card>
+    <ion-card-header>
+      <ion-title>
+        Tecnologias Usadas
+      </ion-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" size-sm>
+        <ion-card>
+          <ion-card-content>
+
+            <ion-card-header>
+              <ion-card-title>Tecnologias</ion-card-title>
+            </ion-card-header>
+            
+            <!--Porjeto 1-->
+            <ion-row>
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Projeto Hope
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Leyse
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+            </ion-row>
+
+            <!--Projeto 2-->
+            <ion-row>
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Keep 
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+              <ion-col size="12" size-sm>
+                <ion-card>
+                  <ion-card-content>
+                    Keep close
+                  </ion-card-content>
+                </ion-card>
+              </ion-col>
+
+            </ion-row>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <!--Pagamentos-->
+  <ion-grid>
+    <ion-row>
+      <ion-slides>
+                
+        <!--Slide 1-->
+        <ion-slide>
+
+          <ion-row>
+
+            <ion-col size="12" size-sm>
+
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle1</ion-card-subtitle>
+                  <ion-card-title>Card Title</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+              </ion-card>
+
+            </ion-col>
+
+            <ion-col size="12" size-sm>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle2</ion-card-subtitle>
+                  <ion-card-title>Card Title</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+              </ion-card>
+            
+            </ion-col>
+
+            <ion-col size="12" size-sm>
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle2</ion-card-subtitle>
+                  <ion-card-title>Card Title</ion-card-title>
+                </ion-card-header>
+              
+                <ion-card-content>
+                  Keep close to Nature's heart... and break clear away, once in awhile,
+                  and climb a mountain or spend a week in the woods. Wash your spirit clean.
+                </ion-card-content>
+              </ion-card>
+            
+            </ion-col>
+
+          </ion-row>
+  
+        </ion-slide>
+      
+      </ion-slides>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

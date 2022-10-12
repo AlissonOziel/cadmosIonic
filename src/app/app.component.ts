@@ -5,14 +5,25 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
+
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Home', url: '/', icon: 'home' },
+    { title: 'Serivços', url: '/servico', icon: 'code-working' },
+    { title: 'Cadmos', url: '/cadmos', icon: 'ribbon' },
+    { title: 'Portifólio', url: '/portifolio', icon: 'trophy' },
+    { title: 'Equipe', url: '/equipe', icon: 'people' },
+    { title: 'Contatos', url: '/contato', icon: 'paper-plane' }
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
-  constructor() {}
+
+
+}
+
+export class ExampleComponent {
+  public data = ['Amsterdam', 'Buenos Aires', 'Cairo', 'Geneva', 'Hong Kong', 'Istanbul', 'London', 'Madrid', 'New York', 'Panama City'];
+  public results = [...this.data];
+
+  handleChange(event) {
+    const query = event.target.value.toLowerCase();
+    this.results = this.data.filter(d => d.toLowerCase().indexOf(query) > -1);
+  }
 }
